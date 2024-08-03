@@ -1,0 +1,146 @@
+*body{
+    box-sizing:border-box;
+    margin: 0%;
+    }
+
+    html, body {
+        height: 100%;
+      }
+.main{
+    width: 100%;
+    height: 100%;
+   
+    display: block;
+}
+
+.header {
+    width:100%;
+   
+    background-color:#333;
+    height:auto;
+    overflow:hidden;
+   
+  }
+  .header a{
+    text-decoration:none;
+    padding:10px;
+    text-align:center;
+    float:left;
+    color:white;
+    
+  }
+.container{
+    
+    width:100%;
+    height: auto;
+    border:solid 2px #b1ebd7ce;
+    background-color: rgb(252, 231, 231);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.box{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color:rgb(142, 207, 207);
+    border-radius: 2px;
+    border-color: grey;
+    border-radius: 2px;
+    width:45%;
+    height:80%;
+    text-align: center;
+    font-size: 40px;
+    box-shadow:20px 20px 20px grey;
+}
+img{
+    margin-top: 3px;
+}
+
+fieldset{
+    width:80%;
+    height:80%;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+legend{
+    font-size: 30px;
+}
+.form{
+   margin-left: 10%;
+
+}
+
+ 
+  input[type="submit"]{
+    font-size:20px;
+    background-color:rgb(12, 63, 63);
+    border:none;
+    color:white;
+    cursor:pointer;
+    width:30%;
+  }
+  input[type="submit"]:hover{
+    background-color:rgb(141, 106, 173);
+    }
+    @media (max-width: 768px){
+        input[type="submit"]{
+            font-size: 12px;
+        }
+        legend{
+           font-size: 20px;
+        }
+        .container{
+            height:100%;
+        }
+        .header{
+            width: 100%;
+            height: 10%;
+            align-items: center;
+            padding-top: 7px;
+        }
+        .header a{
+            font-size: 50%;
+            padding:1%;
+        }
+        .box{
+             width: 50%;
+             
+        }
+        fieldset{
+            width: 80%;
+            margin-top: 20%;
+            font-size: 17px;
+           
+ 
+  
+        }
+        img{
+            margin-top: 6%;
+        }
+    }
+    @media(max-width:576px)
+    {
+     .container{
+        height: 100%;
+       
+        }
+        .header{
+            width: 101%;
+            height: 5%;
+            align-items: center;
+            padding-top: 13px;
+        }
+        .header a{
+            font-size: 10px;
+            padding:7px;
+        }
+        .box{
+             width: 90%;
+        }
+        fieldset{
+            margin-top: 20%;
+        }
+        img{
+            margin-top: 6%;
+        }
+    }

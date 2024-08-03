@@ -1,0 +1,149 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.container {
+    position: relative;
+    /* height: 100%; */
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: scroll;
+}
+
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://www.shutterstock.com/image-photo/mobile-banking-network-online-payment-260nw-1431394361.jpg');
+    /* background-size: 100% 100%;
+    background-position: center; */
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+   
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 300px;
+}
+#box-img{
+    margin-top: 20%;
+}
+b{
+    color:rgb(99, 6, 79);
+    font-size: 30px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+}
+button{
+    background-color: white;
+    color: rgb(82, 76, 76);
+    border: 1px solid grey;
+}
+button:hover{
+    border: 2px solid blue;
+    color: blue;
+}
+#grid1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:1%;
+   grid-row-gap: 10%;
+    margin-top: 2%;
+}
+.grid1-1{
+    background-color: white;
+    color: rgb(61, 52, 52);
+    border: 1px solid grey;
+}
+.grid1-1:hover{
+    border: 2px solid blue;
+    color: blue;
+}
+
+#confirm{
+    margin-top:3%;
+    display: flex;
+    gap: 2%;
+}
+#tick-box{
+    border:2px solid grey;
+    width: 10px;
+    height:12px;
+    position: relative;
+  display: inline-block;
+}
+#confirm-text{
+    color: rgb(61, 52, 52);
+    
+}
+
+ 
+#tick-box:hover::after {
+    content: '✓';
+    background-color: blue;
+    color: white;  
+    border-radius: 3px;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  #donate{
+    width: 100%;
+    background-color: blue;
+    color: aliceblue;
+    margin-top: 80px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 30px;
+   
+  }
+  #donate:hover{
+    cursor: pointer;
+  }
